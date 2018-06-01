@@ -1,0 +1,139 @@
+@font-face{
+	font-family: orbitron;
+	src:url("../fonts/Orbitron-Medium.ttf");
+}
+/*
+
+    100% — FF
+    95% — F2
+    90% — E6
+    85% — D9
+    80% — CC
+    75% — BF
+    70% — B3
+    65% — A6
+    60% — 99
+    55% — 8C
+    50% — 80
+    45% — 73
+    40% — 66
+    35% — 59
+    30% — 4D
+    25% — 40
+    20% — 33
+    15% — 26
+    10% — 1A
+    5% — 0D
+    0% — 00
+
+*/
+.card{	
+	display: inline;
+	float: left;
+	width:18rem;
+	border: 2px solid #D90000;
+	margin:6px;
+	height: 630px;
+	background-color: #2AA88F;	
+	transition: 1s ease;
+}
+.card:hover{
+	transition: 1s ease;
+	background-color: #DE5B49;	
+}
+.card-text ,h5{
+	color: #fff;
+}
+.tarjetas{
+	width: 70%;
+	margin: 0 auto;		
+	height: auto;	
+}
+.navbar{
+	background-color: #324D5C !important;
+}
+.marco{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 500;	
+	margin: 0 auto;
+}
+/*elementos necesarios para parallax*/
+body,html{
+	height: 100%;
+}
+.parallax{
+	background-image: url("../img/motos1.jpg");
+	height: 100%;
+	/*efecto de parallax scrolling*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*fin parallax*/
+.parallaxSuzuki{
+	background-image: url("../img/suzuki.jpg");
+	height: 100%;
+	/*efecto de parallax scrolling*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	 
+}
+.parallaxGP{
+	background-image: url("../img/motos3.jpg");
+	height: 100%;
+	/*efecto de parallax scrolling*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallaxJL{
+	background-image: url("../img/motos5.jpg");
+	height: 100%;
+	/*efecto de parallax scrolling*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.verde{
+	height: auto;
+	background-color: #46B29D;	
+	font-size: 1.5em;
+}
+.blanco{
+	height: auto;
+	background-color: white;
+	font-size: 24px;
+}
+.letraGP{
+	font-family: orbitron;
+}
+p.letraGP{
+	font-size: 24px;
+	text-align: justify;
+	text-rendering: geometricPrecision;	
+	margin: 105px;
+}
+.logo{
+	align:center;
+}
+
+.imagenRedonda{
+	border-radius: 50%;	
+	width: 180px;
+	height: 180px;
+	overflow:hidden;
+	margin-top: 15%;	
+	margin-left: 10%;
+	transition: 1s ease;
+}
+.imagenRedonda:hover{
+	border-radius: 13%;
+	transition: 1s ease;	
+}
