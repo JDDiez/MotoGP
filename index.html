@@ -8,48 +8,49 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">	
 
+
 </head>
 <body>
 <!-- navbar-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">MotoGP</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-taget="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-			<a class="nav-link" href="#">Pilotos
-				<span class="sr-only">(current)</span></a></li>
-
-			<li class="nav-item">
-				<a class="nav-link" href="#">Carreras</a></li>
-			<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fabricantes</a>
-
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="#">Honda</a>
-				<a class="dropdown-item" href="#">Yamaha</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">Ducati</a>			
-				<a class="dropdown-item" href="#">Suzuki</a>	
-			</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link disabled" href="#">Mercadeo</a>
-			</li>			
-		</ul>
-		<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>		
-		 </form>			
-		</div>		
-	</nav><!-- navbar-->
+  <a class="navbar-brand" href="#">MotoGP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Pilotos <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Carreras</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Fabricantes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#ducati">Ducati</a>
+          <a class="dropdown-item" href="#yamaha">Yamaha</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#honda">Honda</a>
+          <a class="dropdown-item" href="#suzuki">Suzuki</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="http://www.motogp.com/es" target="_blank">Sitio Oficial</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav><!-- navbar-->
 
 	<!-- tarjetas aqui-->
 
-	<div class="parallax">	
+	<div class="parallax" id="cards">	
 		<div class="tarjetas">
 	<!-- card-->	
 			<div class="card">
@@ -84,7 +85,7 @@
 	</div><!-- parallax-- >
 	
 	
-	<div class="blanco">
+	<div class="blanco" id="motogp">
 	<!--mx-auto d-block permite centrar la imagen con bootstrap 4.1 -->
 		<img class="mx-auto d-block" src="img/logo.png" alt="logo motoGP">
 		<p class="letraGP">
@@ -96,32 +97,51 @@
 	
 	<div class="parallaxSuzuki"></div>
 
+	
 	<div class="verde">
 		<div class="container">
 			<div class="row">		
-				<div class="col-lg-4">				
+				<div class="col-lg-4">	
+					<section id="suzuki">
 						<img class="imagenRedonda suzukimotos" src="img/suzukilogo.png" alt="logo suzuki">
+					</section>			
 				</div>
 				<div class="col-lg-4">
-					<img class="imagenRedonda" src="img/yamahalogo.jpg" alt="logo yamaha">
+					<section id="yamaha">
+						<img class="imagenRedonda" src="img/yamahalogo.jpg" alt="logo yamaha">
+					</section>
 				</div>
 				<div class="col-lg-4">
-					<img class="imagenRedonda" src="img/hondalogo.jpg" alt="logo honda">
+					<section id="honda">
+						<img class="imagenRedonda" src="img/hondalogo.jpg" alt="logo honda">
+					</section>
 				</div>
 				<div class="col-lg-4">
-					<img class="imagenRedonda" src="img/ducatilogo.png" alt="logo ducati">
+					<section id="ducati">
+						<img class="imagenRedonda" src="img/ducatilogo.png" alt="logo ducati">
+					</section>
 				</div>
 				<div class="col-lg-4">
-					<img class="imagenRedonda" src="img/ktmlogo.jpg" alt="logo ktm">
+					<section id="ktm">
+						<img class="imagenRedonda" src="img/ktmlogo.jpg" alt="logo ktm">
+					</section>
 				</div>
 				<div class="col-lg-4">
-					<img class="imagenRedonda" src="img/aprilialogo.png" alt="logo aprilia">
+					<section id="aprilia">
+						<img class="imagenRedonda" src="img/aprilialogo.png" alt="logo aprilia">
+					</section>
 				</div>				
 			</div><!-- row-->
 		</div><!-- container-->
 	</div><!-- verde-->
+	
 	<div class="parallaxGP"></div>
-	<div class="blanco"></div>
+	<div class="blanco">		
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
 </body>
 
 </html>
